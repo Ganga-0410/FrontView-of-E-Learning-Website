@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+    <link rel="stylesheet" href="home.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      <span class="logo_name">SAKEC</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Classes</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">Test Scheduled</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-list-ul' ></i>
+            <span class="links_name">Test Scores</span>
+          </a>
+        </li>
+        <li>
+            <a href="#">
+              <i class='bx bx-user' ></i>
+              <span class="links_name">Profile</span>
+            </a>
+          </li>
+      
+        
+        <li class="log_out">
+          <a href="#">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <span class="dashboard">Dashboard</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <div class="profile-details">
+        <img src="profile.jpg" alt="">
+        <span class="admin_name">John</span>
+      </div>
+    </nav>
+    <div class="home-content">
+        <div class="overview-boxes">
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Software Engineering</div>
+              <div class="indicator">
+                <i class='bx bx-time-five'></i>
+                <span class="text">3:00pm-4:00pm</span>
+              </div>
+            </div>
+
+          <img src="se.jpg">
+          <!--<i class='bx bx-cart-alt cart'></i>-->
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Theory Of Computation</div>
+            <div class="indicator">
+              <i class='bx bx-time-five'></i>
+              <span class="text">3:00pm-4:00pm</span>
+            </div>
+          </div>
+          <img src="TOC.jpg">
+          <!--<i class='bx bxs-cart-add cart two' ></i>-->
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Computer Network</div>
+            <div class="indicator">
+              <i class='bx bx-time-five'></i>
+              <span class="text">3:00pm-4:00pm</span>
+            </div>
+          </div>
+          <img src="CN.jpg">
+         <!--<i class='bx bx-cart cart three' ></i>-->
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Data Warehouse and Mining</div>
+            <div class="indicator">
+              <i class='bx bx-time-five'></i>
+              <span class="text">3:00pm-4:00pm</span>
+            </div>
+          </div>
+          <img src="dwm.jpeg">
+          <!--<i class='bx bxs-cart-download cart four' ></i>-->
+        </div>
+      </div>
+      
+      <section class="skills">
+        <div class="box">
+          <div class="container">
+            <div class="circular-progress">
+                <span class="progress-value">0%</span>
+            </div>
+      
+            <span class="text">HTML & CSS</span>
+        </div>
+      
+        <div class="container">
+            <div class="circular-progress1">
+                <span class="progress-value1">0%</span>
+            </div>
+      
+            <span class="text">JAVA</span>
+        </div>
+      
+        <div class="container">
+            <div class="circular-progress2">
+                <span class="progress-value2">0%</span>
+            </div>
+      
+            <span class="text">PYTHON</span>
+        </div>
+        </div>
+      </section>
+
+      <section class="circlebar">
+        <div class="skill-bars">
+          <div class="bars">
+            <div class="info">
+              <span>HTML</span>
+            </div>
+            <div class="progress-line html">
+              <span></span>
+            </div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>CSS</span>
+            </div>
+            <div class="progress-line css">
+              <span></span>
+            </div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>jQuery</span>
+            </div>
+            <div class="progress-line jquery">
+              <span></span>
+            </div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>Python</span>
+            </div>
+            <div class="progress-line python">
+              <span></span>
+            </div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>MySQL</span>
+            </div>
+            <div class="progress-line mysql">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+  </section>
+  
+
+
+
+
+<script>
+let circularProgress = document.querySelector(".circular-progress"),
+progressValue = document.querySelector(".progress-value");
+
+let circularProgress1 = document.querySelector(".circular-progress1"),
+progressValue1 = document.querySelector(".progress-value1");
+
+let circularProgress2 = document.querySelector(".circular-progress2"),
+progressValue2 = document.querySelector(".progress-value2");
+
+/******First bar******/
+let progressStartValue = 0,    
+progressEndValue = 65,    
+speed = 100;
+
+let progress = setInterval(() => {
+progressStartValue++;
+
+progressValue.textContent = `${progressStartValue}%`
+circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`
+
+if(progressStartValue == progressEndValue){
+    clearInterval(progress);
+}    
+}, speed);
+
+/******Second bar******/
+let progressStartValue1 = 0,    
+progressEndValue1 = 85,    
+speed1 = 100;
+
+let progress1 = setInterval(() => {
+progressStartValue1++;
+
+progressValue1.textContent = `${progressStartValue1}%`
+circularProgress1.style.background = `conic-gradient(#7d2ae8 ${progressStartValue1 * 3.6}deg, #ededed 0deg)`
+
+if(progressStartValue1 == progressEndValue1){
+    clearInterval(progress1);
+}    
+}, speed1);
+
+/******Thirds bar******/
+let progressStartValue2 = 0,    
+progressEndValue2 = 75,    
+speed2 = 100;
+
+let progress2 = setInterval(() => {
+    progressStartValue2++;
+    
+    progressValue2.textContent = `${progressStartValue2}%`
+    circularProgress2.style.background = `conic-gradient(#7d2ae8 ${progressStartValue2 * 3.6}deg, #ededed 0deg)`
+    
+    if(progressStartValue2 == progressEndValue2){
+        clearInterval(progress2);
+    }    
+    }, speed);
+
+ </script>
+
+</body>
+</html>
+
